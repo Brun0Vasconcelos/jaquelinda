@@ -10,6 +10,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
+            padding: 0 20px;
         }
 
         h1 {
@@ -22,6 +23,9 @@
         p {
             font-size: 1rem;
             padding: 5px;
+            line-height: 1.6;
+            max-width: 800px; /* Limite de largura para melhorar a leitura no desktop */
+            margin: 10px auto; /* Centraliza o texto no desktop */
         }
 
         img {
@@ -47,6 +51,63 @@
         .button:hover {
             background-color: #fa8072;
         }
+
+        /* Ajustes para telas maiores (desktop) */
+        @media (min-width: 1024px) {
+            body {
+                padding: 0 40px; /* Aumenta as margens laterais */
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                padding: 25px;
+            }
+
+            p {
+                font-size: 1.1rem; /* Aumenta ligeiramente o tamanho do texto no desktop */
+                padding: 10px 0;
+                line-height: 1.8;
+            }
+
+            .button {
+                font-size: 1.2rem; /* Aumenta o tamanho dos botões no desktop */
+                padding: 18px 40px;
+            }
+        }
+
+        /* Ajustes para telas menores (celular) */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+
+            p {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+
+            .button {
+                padding: 12px 28px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .button {
+                padding: 10px 24px;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -54,26 +115,15 @@
 	<p>Aqui estão algumas lembranças especiais do nosso curto, mas incrível tempo de namoro.</p>
 	<img src="colagem.jpg" alt="Foto do nosso namoro" />
 	<p>Cada momento que passamos juntos foi inesquecível e especial. O começo de nossa história sempre será guardado no meu coração.</p>
-	<p>Você Lembra? 11 de Julho de 2015, após uma semana de enrolação, e assuntos não resolvidos, após o baile do Juventus nos acertamos e decidimos ficar juntos. 
-Tivemos alguns problemas no caminho, as coisas na sua casa não iam bem, e você decidiu passar um tempo na Ivete, até que pudessemos nos casar e viver à nossa maneira. </p>
+	<p>Você Lembra? 11 de Julho de 2015, após uma semana de enrolação, e assuntos não resolvidos, após o baile do Juventus nos acertamos e decidimos ficar juntos...</p>
 	<p><img src="beijo.jpg" alt="casal se beijando" /></p>
-	<p>Eu realmente gosto da nossa historia, na época em que estávamos nos conhecendo, lembro de tirar uma foto sua cochilando durante a sessão de sábado da conferencia geral de abril de 2015, peguei seu numero com a Mari Helena e te enviei a foto, começamos a conversar aquela noite, vespera do domingo de Páscoa, e foi uma noite muito agradavel.</p>
-	<p>Eu tinha algum compromisso na estaca no domingo e fiquei sem credito no meu bilhete, você me encontrou no ponto e pagou a passagem (MDS eu era mto quebrado naquela época)</p>
-	<p>Lembra como você aceitava ir comigo pra todo canto? lembro de uma noite em que fomos do centro pra vila cristina, passamos no jd. brasil e depois ainda fomos pro florida, loucura... </p>
+	<p>Eu realmente gosto da nossa história... começamos a conversar naquela noite, véspera do domingo de Páscoa, e foi uma noite muito agradável...</p>
 	<p><img src="bico.jpg" alt="casal fazendo bico" /></p>
-	<p>A nossa amizade evoluiu pra flerte, e você estava confiante que nada aconteceria, hahahahaha.</p>
-	<p>No dia do seu aniversário, enquanto eu voltava da faculdade, ousadamente eu me convidei pra ir até sua casa para te dar "Seu presente de aniversário". Voce não acreditava em tamanha audácia da minha parte. Estava frio e uma garoa fina batia gelada contra mim, enquanto eu chamava no seu portão vestindo apenas uma bermuda (não achei que o tempo fosse mudar tanto).</p>
-	<p>Voce atendeu e foi surpreendida com um selinho, entrei e conheci sua familia, me apresentei como seu amigo e sua mãe me ofereceu janta, era figado acebolado, voce ficou com vergonha pela simplicidade e eu encantado com tal recepção, sua mãe pegou um bolo que trouxe do serviço e cantamos parabéns, depois de tudo, sua mãe ainda me fez um chá de gengibre e me convidou para passar a noite em sua casa.</p>
-	<p>Que noite incrivel, sou capaz de relembrar muitos detalhes daquele dia.</p>
-	<p>Em algum momento decidimos que você não iria pra missão, e eu não seria consultor do FSY, e que ao invés disso nós iriamos nos casar. Eu morava no Parque Industrial e voce disse não se importar, então começamos a nos planejar.</p>
-	<p>Naquele tempo o Luizinho e a Alice também estavam namorando, e nós quatro passavamos muito tempo juntos, saiamos pra comer, iamos as atividades da igreja, era muito bom. Por conta disso algumas pessoas diziam que em breve seriamos pais, aí pra não dar razão ao que diziam, passamos os 9 anos seguintes sem engravidar hahahahahaha </p>
+	<p>A nossa amizade evoluiu para flerte, e você estava confiante que nada aconteceria, hahahahaha.</p>
+	<p>No dia do seu aniversário, enquanto eu voltava da faculdade, ousadamente me convidei para ir até sua casa para te dar "Seu presente de aniversário"...</p>
 	<p><img src="beijin.jpg" alt="casal se beijando" /></p>
-	<p>"Melhor de padre do que de Noivo"... Essa frase ficou marcada em nosso namoro/noivado, por que fomos para aquele ensaio que a Rebeca nos pediu ajuda, era algo pro curso que ela estava fazendo de fotografia. O ensaio era uma cerimonia de casamento e por ter poucas pessoas, acabei sendo padre e noivo.</p>
-	
+	<p>"Melhor de padre do que de Noivo"... Essa frase ficou marcada em nosso namoro/noivado...</p>
 
-
-
-	
 	<a href="index.html" class="button">Voltar para a página principal</a>
 </body>
 </html>
