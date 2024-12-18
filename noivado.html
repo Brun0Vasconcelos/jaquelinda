@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memórias do Casamento - Ano 1</title>
+    <title>Noivado</title>
     <style>
         body {
             background-color: #f8d3cf;
@@ -24,8 +24,8 @@
             font-size: 1rem;
             padding: 5px;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0px auto;
+            max-width: 800px; /* Limite de largura para melhorar a leitura no desktop */
+            margin: 0px auto; /* Centraliza o texto no desktop */
         }
 
         img {
@@ -33,14 +33,6 @@
             height: auto;
             margin-top: 20px;
         }
-
-	.button-group {
-        display: flex;
-        justify-content: center; /* Centraliza os botões */
-        gap: 10px; /* Espaçamento entre os botões */
-        margin-top: 30px;
-        flex-wrap: nowrap; /* Impede que os botões quebrem de linha */
-    	}
 
         .button {
             background-color: #ec8a80;
@@ -60,10 +52,19 @@
             background-color: #fa8072;
         }
 
+        select {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 20px 0;
+            border: 1px solid #ec8a80;
+            border-radius: 5px;
+            background-color: white;
+        }
+
         /* Ajustes para telas maiores (desktop) */
         @media (min-width: 1024px) {
             body {
-                padding: 0 40px;
+                padding: 0 40px; /* Aumenta as margens laterais */
             }
 
             h1 {
@@ -72,13 +73,13 @@
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.1rem; /* Aumenta ligeiramente o tamanho do texto no desktop */
                 padding: 10px 0;
                 line-height: 1.8;
             }
 
             .button {
-                font-size: 1.2rem;
+                font-size: 1.2rem; /* Aumenta o tamanho dos botões no desktop */
                 padding: 18px 40px;
             }
         }
@@ -118,15 +119,10 @@
         }
     </style>
 </head>
-<body>
-    <h1>Memórias do Nosso Casamento - 3º Ano</h1>
-	<p>Esse ano foi um ano em que nos coloquei em situações desafiadoras, mas foi o ano em que mais senti nosso amor evoluir.</p>
-	<p>Voce começou a fazer o curso de enfermagem e vi o quanto voce era dedicada com estudos, como era caprichosa e detalhista.</p>
-    <img src="aliança.jpg" alt="mão do casal com aliança" />
-    <div>
-        <a href="ano2.html" class="button">Ano Anterior</a> <!-- Vai pro 1º ano -->
-        <a href="casamento.html" class="button">Menu de Memórias</a> <!-- Vai ao menu do casamento -->
-        <a href="ano4.html" class="button">Próximo Ano</a> <!-- Vai ao próximo ano -->
-    </div>
-</body>
-</html>
+	<h1>Noivado</h1>
+	<p>Em algum momento, decidimos que você não iria para a missão e eu não seria consultor do FSY, e que, ao invés disso, nós iríamos nos casar. Eu morava no Parque Industrial e você disse que não se importava, então começamos a nos planejar.</p>
+	<p><img src="noivos.jpg" alt="casal" /></p>
+	<p>Naquele tempo, o Luizinho e a Alice também estavam namorando, e nós quatro passávamos muito tempo juntos. Saíamos para comer, íamos às atividades da igreja; era muito bom. Por conta disso, algumas pessoas diziam que em breve seríamos pais, e para não dar razão ao que diziam, passamos os 9 anos seguintes sem engravidar hahahahaha.</p>
+	<p><img src="quarteto.jpg" alt="dois casais" /></p>
+	<a href="namoro.html" class="button">Voltar para Namoro</a>
+	<a href="casamento.html" class="button">Casamento</a>
