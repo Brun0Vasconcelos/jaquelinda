@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias do Casamento - Ano X</title>
+    <style>
+        body {
+            background-color: #f8d3cf;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            background-color: #ec8a80;
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            padding: 5px;
+            line-height: 1.6;
+            max-width: 800px; /* Limite de largura para melhorar a leitura no desktop */
+            margin: 0 auto; /* Centraliza o texto no desktop */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os botões quebrem de linha se necessário */
+            justify-content: center; /* Centraliza os botões no container */
+            gap: 10px; /* Espaçamento entre os botões */
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #ec8a80;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            flex: 1 1 calc(33.33% - 20px); /* Cada botão ocupa 1/3 da largura */
+            box-sizing: border-box;
+        }
+
+        .button:hover {
+            background-color: #fa8072;
+        }
+
+        /* Ajustes para telas menores (celular) */
+        @media (max-width: 768px) {
+            .button {
+                flex: 1 1 calc(50% - 20px); /* Cada botão ocupa 50% da largura em telas médias */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .button {
+                flex: 1 1 100%; /* Cada botão ocupa 100% da largura em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Memórias do Nosso Casamento - Ano X</h1>
+
+    <p>Aqui você pode incluir as histórias e fotos deste ano específico.</p>
+    <img src="caricatura.jpg" alt="Caricatura do Ano X" />
+
+    <!-- Grupo de botões no fim da página -->
+    <div class="button-group">
+        <a href="ano-anterior.html" class="button">Ano Anterior</a>
+        <a href="menu-casamento.html" class="button">Menu de Memórias do Casamento</a>
+        <a href="ano-seguinte.html" class="button">Ano Seguinte</a>
+    </div>
+</body>
+</html>
