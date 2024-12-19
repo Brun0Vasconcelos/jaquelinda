@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memórias do Casamento</title>
     <style>
-        body {
+          body {
             background-color: #f8d3cf;
             margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 0 20px;
+        }
+	select {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 20px 0;
+            border: 1px solid #ec8a80;
+            border-radius: 5px;
+            background-color: white;
         }
 
         h1 {
@@ -24,14 +32,21 @@
             font-size: 1rem;
             padding: 5px;
             line-height: 1.6;
-            max-width: 800px; /* Limite de largura para melhorar a leitura no desktop */
-            margin: 0px auto; /* Centraliza o texto no desktop */
+            max-width: 800px;
+            margin: 0px auto;
         }
 
         img {
             max-width: 100%;
             height: auto;
             margin-top: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
         }
 
         .button {
@@ -42,7 +57,6 @@
             text-decoration: none;
             display: inline-block;
             font-size: 1rem;
-            margin: 20px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
@@ -52,19 +66,9 @@
             background-color: #fa8072;
         }
 
-        select {
-            padding: 10px;
-            font-size: 1rem;
-            margin: 20px 0;
-            border: 1px solid #ec8a80;
-            border-radius: 5px;
-            background-color: white;
-        }
-
-        /* Ajustes para telas maiores (desktop) */
         @media (min-width: 1024px) {
             body {
-                padding: 0 40px; /* Aumenta as margens laterais */
+                padding: 0 40px;
             }
 
             h1 {
@@ -73,18 +77,17 @@
             }
 
             p {
-                font-size: 1.1rem; /* Aumenta ligeiramente o tamanho do texto no desktop */
+                font-size: 1.1rem;
                 padding: 10px 0;
                 line-height: 1.8;
             }
 
             .button {
-                font-size: 1.2rem; /* Aumenta o tamanho dos botões no desktop */
+                font-size: 1.2rem;
                 padding: 18px 40px;
             }
         }
 
-        /* Ajustes para telas menores (celular) */
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.5rem;
@@ -121,18 +124,17 @@
 </head>
 <body>
     <h1>Memórias do Nosso Casamento</h1>
-	<p>No dia 19/12/2015 nos casamos, e que dia maluco, incrivel, corrido e etc... digno de uma história</p>
-	<p>O meu tio achava que o casamento era no cartorio de Embu Guaçu, então estava tranquilo, quando soube que era no cartório do Jd. São Luis, começou a correr como um maniaco, mas graças a ele conseguimos chegar a tempo</p>
-	<p>Voltamos pro Embu, passamos pra deixar sua mãe e seus irmãos e fomos pra nossa humilde moradia</p>
-	<p>Meu irmão quase estragou a surpresa, por que ele apareceu do nada, mas voce estava desatenta então não entendeu por que ele estava lá.</p>
-	<p>Com uma conversa fraca e um pretexto absurdo, consegui te convencer a irmos na capela para tirar umas fotos pra um album, ainda sem entender voce se arrumou e fomos.</p>
-	<p>Chegamos lá e enfim voce soube (por que era a unica que ainda nao sabia) que teriamos uma cerimonia de casamento, com flores, enfeites, vestido e uma festa simples</p>
-	<p>Foi uma cerimonia linda, o bispo falou sobre como deveriamos tratar o casamento, como deveriamos tratar um ao outro...</p>
-	<h2>Aqui você pode escolher entre os 9 anos do nosso casamento para relembrar as histórias e fotos de cada ano.</h2>
-	 
-
-    <label for="anoCasamento">Selecione o ano:</label>
-    <select id="anoCasamento" onchange="location = this.value;">
+    <p>No dia 19/12/2015, nos casamos. Que dia maluco, incrível, corrido... digno de uma história!</p>
+    <p>Meu tio achava que o casamento seria no cartório de Embu-Guaçu, então estava tranquilo. Quando soube que era no cartório do Jardim São Luís, começou a correr como um maníaco, mas, graças a ele, conseguimos chegar a tempo.</p>
+    <p>Voltamos para Embu, passamos para deixar sua mãe e seus irmãos, e fomos para nossa humilde moradia.</p>
+    <p>Meu irmão quase estragou a surpresa porque apareceu do nada, mas você estava desatenta e não entendeu por que ele estava lá.</p>
+    <p>Com uma conversa fraca e um pretexto absurdo, consegui te convencer a irmos à capela para tirar fotos para um álbum. Ainda sem entender, você se arrumou e fomos.</p>
+    <p>Chegamos lá, e, enfim, você soube (porque era a única que ainda não sabia) que teríamos uma cerimônia de casamento, com flores, enfeites, vestido e uma festa simples.</p>
+    <p>Foi uma cerimônia linda. O bispo falou sobre como deveríamos tratar o casamento e como deveríamos tratar um ao outro.</p>
+    <h2>Aqui você pode escolher entre os 9 anos do nosso casamento para relembrar as histórias e fotos de cada ano.</h2>
+    <h2><label for="anoCasamento">Selecione o ano:</label></h2>
+   <div>
+	 <select id="anoCasamento" onchange="location = this.value;">
         <option value="">Escolha um ano...</option>
         <option value="ano1.html">1º Ano</option>
         <option value="ano2.html">2º Ano</option>
@@ -144,9 +146,6 @@
         <option value="ano8.html">8º Ano</option>
         <option value="ano9.html">9º Ano</option>
     </select>
-
-    <!-- Aqui você pode adicionar os textos e imagens posteriormente -->
-    <p><img src="casamento.jpg" alt="casamento" /></p>
-    <a href="index.html" class="button">Voltar para a página principal</a>
-</body>
-</html>
+</div>
+    <img src="casamento.jpg" alt="Imagem do casamento" />
+   

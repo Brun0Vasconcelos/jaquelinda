@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memórias do Casamento - Ano 1</title>
+    <meta name="description" content="Reviva as memórias do nosso primeiro ano de casamento, cheio de momentos especiais e inesquecíveis.">
+    <meta name="keywords" content="casamento, memórias, amor, lua de mel, fotos de casamento">
+    <title>Memórias do Casamento - Nosso 1º Ano Juntos</title>
     <style>
+        /* Estilos mantidos conforme o código original */
         body {
             background-color: #f8d3cf;
             margin: 0;
@@ -34,13 +37,12 @@
             margin-top: 20px;
         }
 
-	.button-group {
-        display: flex;
-        justify-content: center; /* Centraliza os botões */
-        gap: 10px; /* Espaçamento entre os botões */
-        margin-top: 30px;
-        flex-wrap: nowrap; /* Impede que os botões quebrem de linha */
-    	}
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
 
         .button {
             background-color: #ec8a80;
@@ -50,7 +52,6 @@
             text-decoration: none;
             display: inline-block;
             font-size: 1rem;
-            margin: 20px;
             cursor: pointer;
             border: none;
             border-radius: 5px;
@@ -60,7 +61,6 @@
             background-color: #fa8072;
         }
 
-        /* Ajustes para telas maiores (desktop) */
         @media (min-width: 1024px) {
             body {
                 padding: 0 40px;
@@ -83,7 +83,6 @@
             }
         }
 
-        /* Ajustes para telas menores (celular) */
         @media (max-width: 768px) {
             h1 {
                 font-size: 1.5rem;
@@ -119,15 +118,19 @@
     </style>
 </head>
 <body>
-    <h1>Memórias do Nosso Casamento - 1º Ano</h1>
+    <header>
+        <h1>Memórias do Nosso Casamento - 1º Ano</h1>
+    </header>
+    <section>
 	<p>Lua de mel e fim de ano tranquilo, iniciamos o ano de 2016 com bastante fé e trabalho.</p>
-	<p>Um dos missionarios que te ensinou voltou pra casa e como sei que voce gosta dessa foto.</p>
-    <img src="elder.jpg" alt="Foto do Casamento - Ano 1" />
-    <!-- Botões de navegação no final da página -->
-    <div>
-        <a href="namoro.html" class="button">Ano Anterior</a> <!-- Vai pra sessão de namoro -->
-        <a href="casamento.html" class="button">Menu de Memórias</a> <!-- Vai ao menu do casamento -->
-        <a href="ano2.html" class="button">Próximo Ano</a> <!-- Vai ao próximo ano -->
+	<p>Um dos missionários que te ensinou voltou para casa, e, como sei que você gosta dessa foto, aqui está ela.</p>
+	<img src="elder.jpg" alt="Foto do Casamento - Ano 1" />
+
+    </section>
+    <div class="button-group">
+        <a href="noivado.html" class="button" title="Ano Anterior">Ano Anterior</a>
+        <a href="casamento.html" class="button" title="Menu de Memórias">Menu de Memórias</a>
+        <a href="ano2.html" class="button" title="Próximo Ano">Próximo Ano</a>
     </div>
 </body>
 </html>
